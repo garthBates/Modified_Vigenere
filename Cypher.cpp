@@ -9,3 +9,9 @@
 
 #include "Cypher.h"
 
+string Cypher::getKey(){
+    cout << "Enter the encrpytion key";
+    string key;
+    cin >> key;
+    return key;
+}
