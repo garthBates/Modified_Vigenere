@@ -21,11 +21,12 @@ using std::shuffle;
 
 class Cypher {
     public:
-    string runEnryption(string key, string plaintext);      //returns cyphertext
-    string runDecryption(string key, string cyphertext);    //return plaintext
+    string runEnryption();      //returns cyphertext
+    string runDecryption();    //return plaintext
     private:
     void createTable(string key);
     string getKey();
     string getPlaintext();
+    string getCyphertext();
 
 };
