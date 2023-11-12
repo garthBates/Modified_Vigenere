@@ -10,8 +10,15 @@
 #include "Cypher.h"
 
 string Cypher::getKey(){
-    cout << "Enter the encrpytion key";
+    cout << "Enter the encrpytion key\n";
     string key;
     cin >> key;
     return key;
+}
+
+string Cypher::getPlaintext(){
+    cout << "Enter text to be encrypted\n";
+    string plaintext;
+    cin >> plaintext;
+    return plaintext;
 }
