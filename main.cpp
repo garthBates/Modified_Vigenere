@@ -12,7 +12,7 @@
 
 int main(void){
     while(true){
-
+        //call runEncryption to start debugging
     }
 
     return 0;

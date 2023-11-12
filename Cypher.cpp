@@ -33,3 +33,7 @@ void Cypher::createTable(string key){
         cout << i << " ";
     }
 }
+
+string Cypher::runEnryption(){
+    
+}
