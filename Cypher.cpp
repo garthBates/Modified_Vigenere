@@ -6,6 +6,7 @@
 // Date Completed:
 ///////////////////////////////
 
+#pragma once
 
 #include "Cypher.h"
 
@@ -21,4 +22,14 @@ string Cypher::getPlaintext(){
     string plaintext;
     cin >> plaintext;
     return plaintext;
+}
+
+void Cypher::createTable(string key){
+    vector<char> table = {'A','B','C','D','E'};
+    std::shuffle(table.begin(), table.end(), key);
+
+    cout << "Shuffled elements: ";
+    for (const int& i : table){
+        cout << i << " ";
+    }
 }
