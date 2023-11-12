@@ -8,6 +8,12 @@
 
 #pragma once
 
+#include "Cypher.h"
+
 int main(void){
+    while(true){
+
+    }
+
     return 0;
 }
