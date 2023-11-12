@@ -12,14 +12,16 @@
 
 
 using std::string;
+using std::cout;
+using std::cin;
 
 class Cypher {
     public:
-    string runEnryption(string key, string plaintext);      //returns cyphertext
-    string runDecryption(string key, string cyphertext);    //return plaintext
-    private:
-    void createTable(string key);
     string getKey();
     string getPlaintext();
+    private:
+    void createTable(string key);
+    string runEnryption(string key, string plaintext);      //returns cyphertext
+    string runDecryption(string key, string cyphertext);    //return plaintext
 
 };
