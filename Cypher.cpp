@@ -37,6 +37,10 @@ void Cypher::createTable(string key){
 string Cypher::runEncryption(){
     string key = getKey();
 
-
+    
     return "Encryption completed";
+}
+
+string Cypher::runDecryption(){
+    return " ";
 }
