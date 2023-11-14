@@ -6,7 +6,6 @@
 // Date Completed:
 ///////////////////////////////
 
-#pragma once
 
 #include "Cypher.h"
 
