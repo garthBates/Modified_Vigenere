@@ -7,9 +7,10 @@
 ///////////////////////////////
 
 #include "Cypher.h"
+#include "Cypher.cpp"
 
 int main(void){
     Cypher cyp;
     //call runEncryption to start debugging
-    cyp.runEncryption();
+    cout << cyp.runEncryption();
 }

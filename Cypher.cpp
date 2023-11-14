@@ -25,6 +25,7 @@ string Cypher::getPlaintext(){
 }
 
 void Cypher::createTable(string key){
+    /*
     vector<char> table = {'A','B','C','D','E'};
     std::shuffle(table.begin(), table.end(), key);
 
@@ -32,13 +33,14 @@ void Cypher::createTable(string key){
     for (const int& i : table){
         cout << i << " ";
     }
+    */
 }
 
 string Cypher::runEncryption(){
     string key = getKey();
 
     
-    //return "Encryption completed";
+    return "Encryption completed\n";
 }
 
 string Cypher::runDecryption(){
@@ -46,5 +48,5 @@ string Cypher::runDecryption(){
 }
 
 string Cypher::getCyphertext(){
-    
+
 }
