@@ -38,9 +38,13 @@ string Cypher::runEncryption(){
     string key = getKey();
 
     
-    return "Encryption completed";
+    //return "Encryption completed";
 }
 
 string Cypher::runDecryption(){
     return " ";
+}
+
+string Cypher::getCyphertext(){
+    
 }
