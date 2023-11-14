@@ -21,7 +21,7 @@ using std::shuffle;
 
 class Cypher {
     public:
-    string runEnryption();      //returns cyphertext. Calls getKey() and getPlaintext()
+    string runEncryption();      //returns cyphertext. Calls getKey() and getPlaintext()
     string runDecryption();    //return plaintext. Calls getKey() and getCyphertext()
     private:
     void createTable(string key);

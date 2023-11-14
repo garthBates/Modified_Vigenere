@@ -34,6 +34,9 @@ void Cypher::createTable(string key){
     }
 }
 
-string Cypher::runEnryption(){
-    
+string Cypher::runEncryption(){
+    string key = getKey();
+
+
+    return "Encryption completed";
 }
