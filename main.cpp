@@ -10,8 +10,11 @@
 #include "Cypher.h"
 
 int main(void){
+    Cypher cyp;
     while(true){
         //call runEncryption to start debugging
+        string test = cyp.runEncryption();
+
     }
 
     return 0;
