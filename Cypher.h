@@ -18,6 +18,7 @@ using std::cout;
 using std::cin;
 using std::vector;
 using std::shuffle;
+using std::endl;
 
 class Cypher {
     public:

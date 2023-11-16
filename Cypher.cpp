@@ -26,7 +26,25 @@ string Cypher::getPlaintext(){
 
 void Cypher::createTable(string key){
     
-    vector<char> table = {'A','B','C','D','E'};
+    vector<char> tableSet = {'A','B','C','D','E'};
+    vector<vector<char>> table;
+    char temp;
+    //table[0] = tableSet;
+
+    for(int i = 0; i < tableSet.size(); i++){
+        table[i] = tableSet;
+        temp = tableSet.front();
+        tableSet.erase(tableSet.begin());
+        tableSet.push_back(temp);
+    }
+
+    for(int i = 0; i < table.size(); i++){
+        for(int j = 0; j < table[i].size(); j++){
+            cout << table[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     /*
     std::shuffle(table.begin(), table.end(), key);
 
