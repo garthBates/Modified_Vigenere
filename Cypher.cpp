@@ -25,8 +25,9 @@ string Cypher::getPlaintext(){
 }
 
 void Cypher::createTable(string key){
-    /*
+    
     vector<char> table = {'A','B','C','D','E'};
+    /*
     std::shuffle(table.begin(), table.end(), key);
 
     cout << "Shuffled elements: ";

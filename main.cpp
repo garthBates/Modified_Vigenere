@@ -7,7 +7,7 @@
 ///////////////////////////////
 
 #include "Cypher.h"
-#include "Cypher.cpp"
+#include "Cypher.cpp"           //Added include to get around linker error in gcc
 
 int main(void){
     Cypher cyp;
