@@ -25,7 +25,6 @@ string Cypher::getPlaintext(){
 }
 
 void Cypher::createTable(string key){
-    //cout << "In createTable()" << endl;
     vector<char> tableSet = {'A','B','C','D','E'};
     vector<vector<char>> table;
     char temp;
@@ -34,13 +33,10 @@ void Cypher::createTable(string key){
         seed += int(key[i]);
     }
 
-    //unsigned seed = stoi(key);
-    shuffle(tableSet.begin(), tableSet.end(), std::default_random_engine(seed));
+    shuffle(tableSet.begin(), tableSet.end(), default_random_engine(seed));
 
     for(int i = 0; i < tableSet.size(); i++){
-        //cout << "building table" << endl;
         table.push_back(tableSet);
-        //cout << "tableSet added to table" << endl;
         temp = tableSet.front();
         tableSet.erase(tableSet.begin());
         tableSet.push_back(temp);
