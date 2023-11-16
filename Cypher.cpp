@@ -29,7 +29,13 @@ void Cypher::createTable(string key){
     vector<char> tableSet = {'A','B','C','D','E'};
     vector<vector<char>> table;
     char temp;
-    //table[0] = tableSet;
+    unsigned seed = 0;
+    for(int i = 0; i <key.length(); i++){
+        seed += int(key[i]);
+    }
+
+    //unsigned seed = stoi(key);
+    shuffle(tableSet.begin(), tableSet.end(), std::default_random_engine(seed));
 
     for(int i = 0; i < tableSet.size(); i++){
         //cout << "building table" << endl;
@@ -47,14 +53,9 @@ void Cypher::createTable(string key){
         cout << endl;
     }
 
-    /*
-    std::shuffle(table.begin(), table.end(), key);
+    
 
-    cout << "Shuffled elements: ";
-    for (const int& i : table){
-        cout << i << " ";
-    }
-    */
+    
 }
 
 string Cypher::runEncryption(){
