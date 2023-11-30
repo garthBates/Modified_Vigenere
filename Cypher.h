@@ -20,6 +20,7 @@ using std::cin;
 using std::vector;
 using std::shuffle;
 using std::endl;
+using std::default_random_engine;
 
 class Cypher {
     public:
@@ -30,5 +31,6 @@ class Cypher {
     string getKey();
     string getPlaintext();
     string getCyphertext();
+    string resizeKey(string key, string plaintext);
 
 };
