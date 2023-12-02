@@ -27,7 +27,7 @@ class Cypher {
     string runEncryption();      //returns cyphertext. Calls getKey() and getPlaintext()
     string runDecryption();    //return plaintext. Calls getKey() and getCyphertext()
     private:
-    void createTable(string key);
+    vector<vector<char>> createTable(string key);
     string getKey();
     string getPlaintext();
     string getCyphertext();

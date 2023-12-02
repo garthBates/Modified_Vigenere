@@ -67,13 +67,19 @@ string Cypher::resizeKey(string key, string plaintext){
         key.push_back(key[i]);
     }
 
+    for(int i = 0; i <key.length(); i++){
+        cout << key[i];
+    }
+    cout << endl;
     return key;
 }
 
 
 string Cypher::runEncryption(){
     string key = getKey();
+    string plainText = getPlaintext();
     createTable(key);
+    string newKey = resizeKey(key, plainText);
     
     return "Encryption completed\n";
 }
