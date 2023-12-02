@@ -24,7 +24,7 @@ string Cypher::getPlaintext(){
     return plaintext;
 }
 
-void Cypher::createTable(string key){
+vector<vector<char>> Cypher::createTable(string key){
     vector<char> tableSet = {'A','B','C','D','E'};
     vector<vector<char>> table;
     char temp;
@@ -50,7 +50,7 @@ void Cypher::createTable(string key){
     }
 
     
-
+    return table;
     
 }
 
