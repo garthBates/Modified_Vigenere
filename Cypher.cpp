@@ -54,6 +54,18 @@ void Cypher::createTable(string key){
     
 }
 
+string Cypher::resizeKey(string key, string plaintext){
+    int keylength = key.length();
+    int textlength = plaintext.length();
+
+    if(keylength >= textlength){
+        return key;
+    }
+
+    
+}
+
+
 string Cypher::runEncryption(){
     string key = getKey();
     createTable(key);
