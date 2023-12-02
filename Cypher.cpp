@@ -56,13 +56,18 @@ void Cypher::createTable(string key){
 
 string Cypher::resizeKey(string key, string plaintext){
     int keylength = key.length();
-    int textlength = plaintext.length();
-
-    if(keylength >= textlength){
-        return key;
+    
+    for (int i = 0; ; i++){
+        if (keylength == i){
+            i = 0;
+        }
+        if (key.length() == plaintext.length()){
+            break;
+        }
+        key.push_back(key[i]);
     }
 
-    
+    return key;
 }
 
 
