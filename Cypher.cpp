@@ -77,17 +77,20 @@ string Cypher::resizeKey(string key, string plaintext){
 string Cypher::encrypt(string newKey, string plainText, vector<vector<char>> table){
     string cypherText = "";
     char temp = 'a';
-    int index = 0;
+    int indexPT = 0;
+    int indexKey = 0;
 
     for (int i = 0; i < plainText.length(); i++){
         
         auto it = find(table[0].begin(), table[0].end(), plainText[i]);
         if (it != table[0].end()){
-            index = it - table[0].begin();
-            cout << index << endl;
+            indexPT = it - table[0].begin();
+            cout << indexPT << endl;
         } else {
             cout << "-1" << endl;
         }
+
+        cypherText.push_back(table[indexPT][indexKey]);
 
     }
 
@@ -101,6 +104,8 @@ string Cypher::runEncryption(){
     string newKey = resizeKey(key, plainText);
 
     string cypherText = encrypt(newKey, plainText, table);
+
+    cout << cypherText << endl;
     
     return "Encryption completed\n";
 }
