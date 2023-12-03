@@ -95,7 +95,7 @@ string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> tab
 string Cypher::runEncryption(){
     string key = getKey();
     string plainText = getPlaintext();
-    createTable(key);
+    vector<vector<char>> table = createTable(key);
     string newKey = resizeKey(key, plainText);
     
     return "Encryption completed\n";
