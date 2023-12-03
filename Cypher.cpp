@@ -90,6 +90,14 @@ string Cypher::encrypt(string newKey, string plainText, vector<vector<char>> tab
             cout << "-1" << endl;
         }
 
+        auto it2 = find(table[0].begin(), table[0].end(), newKey[i]);
+        if (it2 != table[0].end()){
+            indexKey = it2 - table[0].begin();
+            cout << indexKey << endl;
+        } else {
+            cout << "-1" << endl;
+        }
+
         cypherText.push_back(table[indexPT][indexKey]);
 
     }
