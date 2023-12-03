@@ -98,6 +98,10 @@ string Cypher::encrypt(string newKey, string plainText, vector<vector<char>> tab
     return cypherText;
 }
 
+string Cypher::decrypt(string newKey, string cypherText, vector<vector<char>> table){
+    
+}
+
 string Cypher::runEncryption(){
     string key = getKey();
     string plainText = getPlainText();
