@@ -29,8 +29,8 @@ class Cypher {
     private:
     vector<vector<char>> createTable(string key);
     string getKey();
-    string getPlaintext();
-    string getCyphertext();
+    string getPlainText();
+    string getCypherText();
     string resizeKey(string key, string plainText);
     string encrypt(string newKey, string plainText, vector<vector<char>> table);
     string decrypt(string newKey, string cypherText, vector<vector<char>> table);

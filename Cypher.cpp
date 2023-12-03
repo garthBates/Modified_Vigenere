@@ -17,11 +17,11 @@ string Cypher::getKey(){
     return key;
 }
 
-string Cypher::getPlaintext(){
+string Cypher::getPlainText(){
     cout << "Enter text to be encrypted\n";
-    string plaintext;
-    cin >> plaintext;
-    return plaintext;
+    string plainText;
+    cin >> plainText;
+    return plainText;
 }
 
 vector<vector<char>> Cypher::createTable(string key){
@@ -100,7 +100,7 @@ string Cypher::encrypt(string newKey, string plainText, vector<vector<char>> tab
 
 string Cypher::runEncryption(){
     string key = getKey();
-    string plainText = getPlaintext();
+    string plainText = getPlainText();
     vector<vector<char>> table = createTable(key);
     string newKey = resizeKey(key, plainText);
 
@@ -112,9 +112,19 @@ string Cypher::runEncryption(){
 }
 
 string Cypher::runDecryption(){
-    return " ";
+    string key = getKey();
+    string cypherText = getCypherText();
+    vector<vector<char>> table = createTable(key);
+    string newKey = resizeKey(key, cypherText);
+
+
+
+    return "Decryption completed\n";
 }
 
-string Cypher::getCyphertext(){
-
+string Cypher::getCypherText(){
+    cout << "Enter text to be decrypted\n";
+    string cypherText;
+    cin >> cypherText;
+    return cypherText;
 }
