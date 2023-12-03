@@ -75,7 +75,7 @@ string Cypher::resizeKey(string key, string plaintext){
 }
 
 string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> table){
-    string cyphertest = "";
+    string cyphertext = "";
     char temp = 'a';
     int index = 0;
 
@@ -90,6 +90,8 @@ string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> tab
         }
 
     }
+
+    return cyphertext;
 }
 
 string Cypher::runEncryption(){
