@@ -74,6 +74,9 @@ string Cypher::resizeKey(string key, string plaintext){
     return key;
 }
 
+string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> table){
+    
+}
 
 string Cypher::runEncryption(){
     string key = getKey();
