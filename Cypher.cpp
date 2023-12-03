@@ -77,9 +77,18 @@ string Cypher::resizeKey(string key, string plaintext){
 string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> table){
     string cyphertest = "";
     char temp = 'a';
+    int index = 0;
 
     for (int i = 0; i < plaintext.length(); i++){
         
+        auto it = find(table[0].begin(), table[0].end(), plaintext[i]);
+        if (it != table[0].end()){
+            index = it - table[0].begin();
+            cout << index << endl;
+        } else {
+            cout << "-1" << endl;
+        }
+
     }
 }
 
