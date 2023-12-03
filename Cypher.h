@@ -32,5 +32,6 @@ class Cypher {
     string getPlaintext();
     string getCyphertext();
     string resizeKey(string key, string plaintext);
-
+    string encrypt(string newKey, string plaintext, vector<vector<char>> table);
+    string decrypt(string newKey, string plaintext, vector<vector<char>> table);
 };
