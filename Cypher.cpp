@@ -99,7 +99,12 @@ string Cypher::encrypt(string newKey, string plainText, vector<vector<char>> tab
 }
 
 string Cypher::decrypt(string newKey, string cypherText, vector<vector<char>> table){
-    
+    string plainText = "";
+    int indexCT = 0;
+    int indexKey = 0;
+
+
+    return plainText;
 }
 
 string Cypher::runEncryption(){
