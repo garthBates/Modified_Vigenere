@@ -75,7 +75,12 @@ string Cypher::resizeKey(string key, string plaintext){
 }
 
 string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> table){
+    string cyphertest = "";
+    char temp = 'a';
 
+    for (int i = 0; i < plaintext.length(); i++){
+        
+    }
 }
 
 string Cypher::runEncryption(){
