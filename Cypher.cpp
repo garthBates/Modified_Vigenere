@@ -25,7 +25,7 @@ string Cypher::getPlaintext(){
 }
 
 vector<vector<char>> Cypher::createTable(string key){
-    vector<char> tableSet = {'A','B','C','D','E'};
+    vector<char> tableSet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     vector<vector<char>> table;
     char temp;
     unsigned seed = 0;
@@ -75,7 +75,7 @@ string Cypher::resizeKey(string key, string plaintext){
 }
 
 string Cypher::encrypt(string newKey, string plaintext, vector<vector<char>> table){
-    
+
 }
 
 string Cypher::runEncryption(){
