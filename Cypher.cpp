@@ -143,6 +143,8 @@ string Cypher::runDecryption(){
 
     string plainText = decrypt(newKey, cypherText, table);
 
+    cout << plainText << endl;
+
     return "Decryption completed\n";
 }
 
