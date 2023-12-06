@@ -13,4 +13,5 @@ int main(void){
     Cypher cyp;
     //call runEncryption to start debugging
     cout << cyp.runEncryption();
+    cout << cyp.runDecryption();
 }

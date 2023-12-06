@@ -141,7 +141,7 @@ string Cypher::runDecryption(){
     vector<vector<char>> table = createTable(key);
     string newKey = resizeKey(key, cypherText);
 
-
+    string plainText = decrypt(newKey, cypherText, table);
 
     return "Decryption completed\n";
 }
