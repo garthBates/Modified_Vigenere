@@ -115,7 +115,7 @@ string Cypher::decrypt(string newKey, string cypherText, vector<vector<char>> ta
             indexCT = it - table[indexKey].begin();
         }
 
-        plainText.push_back(table[indexKey][indexCT]);
+        plainText.push_back(table[0][indexCT]);
 
     }
 
