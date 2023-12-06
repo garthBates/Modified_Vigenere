@@ -103,6 +103,21 @@ string Cypher::decrypt(string newKey, string cypherText, vector<vector<char>> ta
     int indexCT = 0;
     int indexKey = 0;
 
+    for (int i = 0; i < cypherText.length(); i++){
+
+        auto it2 = find(table[0].begin(), table[0].end(), newKey[i]);
+        if (it2 != table[0].end()){
+            indexKey = it2 - table[0].begin();
+        } 
+
+        auto it = find(table[indexKey].begin(), table[indexKey].end(), cypherText[i]);
+        if (it != table[indexKey].end()){
+            indexCT = it - table[indexKey].begin();
+        }
+
+        plainText.push_back(table[indexKey][indexCT]);
+
+    }
 
     return plainText;
 }
