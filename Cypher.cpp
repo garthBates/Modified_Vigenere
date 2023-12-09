@@ -57,6 +57,10 @@ vector<vector<char>> Cypher::createTable(string key){
 string Cypher::resizeKey(string key, string plaintext){
     int keylength = key.length();
     
+    if(keylength >= plaintext.length()){
+        return key;
+    }
+
     for (int i = 0; ; i++){
         if (keylength == i){
             i = 0;
@@ -136,6 +140,7 @@ string Cypher::runEncryption(){
 }
 
 string Cypher::runDecryption(){
+    
     string key = getKey();
     string cypherText = getCypherText();
     vector<vector<char>> table = createTable(key);
