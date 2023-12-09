@@ -71,10 +71,6 @@ string Cypher::resizeKey(string key, string plaintext){
         key.push_back(key[i]);
     }
 
-    for(int i = 0; i <key.length(); i++){
-        cout << key[i];
-    }
-    cout << endl;
     return key;
 }
 
