@@ -43,14 +43,7 @@ vector<vector<char>> Cypher::createTable(string key){
         tableSet.push_back(temp);
     }
 
-    for(int i = 0; i < table.size(); i++){
-        for(int j = 0; j < table[i].size(); j++){
-            cout << table[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    
+        
     return table;
     
 }
