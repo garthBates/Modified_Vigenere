@@ -3,7 +3,7 @@
 // Project: Modified Vigenere
 // File: main.cpp
 // Date Started: 11/11/2023
-// Date Completed:
+// Date Completed: 12/9/23
 ///////////////////////////////
 
 #include "Cypher.h"
@@ -11,10 +11,7 @@
 
 int main(void){
     Cypher cyp;
-    //call runEncryption to start debugging
-    //cout << cyp.runEncryption();
-    //cout << cyp.runDecryption();
-
+    
     int option = -1;
 
     while(option != 0){

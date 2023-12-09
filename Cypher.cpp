@@ -3,7 +3,7 @@
 // Project: Modified Vigenere
 // File: Cypher.cpp
 // Date Started: 11/12/2023
-// Date Completed:
+// Date Completed: 12/9/23
 ///////////////////////////////
 
 #pragma once
